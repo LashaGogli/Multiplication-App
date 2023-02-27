@@ -52,6 +52,26 @@ buttondiv.addEventListener("click", function () {
 
 
 })
+inputDiv.addEventListener("keypress", function(event) {
+    if (event.key === "Enter") {
+        if (inputDiv.value == x * y) {
+            score++;
+    
+    
+        } else {
+            countlive--;
+            localStorage.setItem("countlive", countlive.toString());
+    
+    
+    
+        }
+        imennascore.innerHTML = "score: " + score;
+        localStorage.setItem("score", score.toString());
+        location.reload();
+    
+
+    }
+  });
 
 
 
@@ -102,3 +122,5 @@ newGame.addEventListener("click", function () {
 
 
 })
+
+
