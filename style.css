@@ -26,7 +26,8 @@
     margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: end;
+    justify-content: space-between;
+    flex-direction: row;
     font-weight: 900;
     color: green;
     font-size: 18px;
@@ -69,4 +70,23 @@
 .newGame{
     width: 20%;
     margin: 0 auto;
+}
+.img1{
+    width: 20px;
+    height: 20px;
+
+}
+.img2{
+    width: 20px;
+    height: 20px;
+
+}
+.img3{
+    width: 20px;
+    height: 20px;
+
+}
+.imgDivs{
+    display: flex;
+    vertical-align: bottom;
 }
